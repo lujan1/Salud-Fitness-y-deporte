@@ -10,6 +10,43 @@ body {
     background-attachment: fixed;
     color: #111;
 }
+.btn-llamativo {
+    display: inline-block;
+    padding: 15px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg,
+    #833ab4, #fd1d1d,#fcb045);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(133, 98, 98, 0.3);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+}
+.btn-llamativo::after {
+    content: "_";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translatey(-50);
+    font-size: 1.2rem;
+    transition: right 0.3s ease;
+}
+.btn-llamativo:hover {
+    background: linear-gradient(45deg,
+    #fcb045, #fd1d1d, #833ab4);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    padding-right: 40px ;
+}
+.btn-llamativo:hover::after {
+    right: 10px;
+}
+
 .contenido {
     min-height: 100vh;
     padding: 40px;
