@@ -1,0 +1,159 @@
+.contenedor-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+#toggle-menu {
+            display: none;
+        }
+label[for="toggle-menu"] {
+    background-color: #333;;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.menu-navegacion {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.boton {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: arial, sans-serif;
+    transition: background-color 0.3s
+    ease;
+}
+.sobre {
+    background-color: #FF69B4;
+}
+#contenido-menu {
+    display: none;
+    margin-top: 10px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: arial,sans-serif;
+    line-height: 1.6;
+}
+#toggle-menu:checked+label + #contenido-menu {
+    display: block;
+}
+body {
+    color: azure;
+ background-image: url('../img/photo.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: 0;
+ padding: 0;
+ font-family: arial,sans-serif;
+ 
+}
+#toggle-menu:checked + label + #contenido-menu{
+    display: block;
+}
+.btn-instagram{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #E4405F;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 4px 8px
+    rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+.btn-instagram:hover {
+    background: #c13584;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    text-decoration: solid;
+    font-style: oblique;
+    color: white;
+}
+li {
+    text-align: left;
+    font-size: larger;
+    color: azure;
+}
+h2 {
+    color: azure;
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+}
+.contenedor-imagen {
+ text-align: center;
+ padding: 20px;
+}
+.imagen-centrada {
+ max-width: 100%;
+ height: auto;
+ display: fl;
+ border-radius: 12px;
+ box-shadow: 0 4px 8px rgba(216, 23, 23, 0.2);
+}
+.menu a {
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.menu a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+.foto-nombre {
+    text-align: center;
+    margin-top: 20px;
+}
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.nombre {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    text-decoration: underline;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="./inicio.css">
+<title>INICIO </title>
+</head>
+<body class="inicio">
+    <a href="https://www.instagram.com/carlos_daniell_ll/"
+    target="_blank"
+    class="btn-llamativo"
+    title="Sigueme en instagram">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+<div class="menu">
+    <a href="../index.html">Pagina principal</a>
+    <a href="../sobre-mi/sobre_mi.html">Sobre mí</a>
+    <a href="../contacto/contact.html">Contacto</a>
+</div>
+<div class="contenido">
+    <h1 class="titulo">BIENVENIDOS <br>A NUESTRO <br> PROGRAMA
+    SALUDABLE</h1>
+</div>
+<section class="seccion-carrusel">
+    <h2 class="titulo-carrusel">Encuentra inspiracion</h2>
+    <div style="text-align: center;
+    margin-bottom: 10px;">
+    <button class="boton-izq" 
+    onclick="moverCarrusel(-1)">&#10094;</button>
+    <button class="boton-der"
+    onclick="moverCarrusel(1)">&#10095;</button> 
+<div class="contendor-carrusel">
+    <div class="slide-caja">
+    <div class="slide-item">
+        <img src="../img/yoga.jpg" alt="Frase 1">
+            <p>"El cuerpo logra lo que la mente cree.</p></div>
+        <div class="slide-item"><img src="../img/joven.jpg" alt="Frase 2">
+            <p>"hoy es el mejor día para empezar.</p></div>
+        <div class="slide-item"><img src="../img/fit.jpg" alt="Frase 3">
+            <p>"Cada paso cuenta. Sigue avanzando.</p></div>
+        <div class="slide-item"> <img src="../img/boxeo.jpg" alt="Frase 4">
+            <p>"No entreno para vencer a otros, entreno 
+                para vencerme a mi misma.Cada golpe es una promesa 
+                de fuerza,disciplina y evolucion."
+            </p></div>
+        <div class="slide-item"><img src="../img/escalada.jpg"
+            alt="Frase 5">
+            <p>"Cada paso hacia arriba no es solo una conquista
+                del muro, sino de mis propios límites.
+                
+            </p></div>  
+            <div class="slide-item"><img src="../img/zumba.jpg"
+                alt="Frase 6">
+                <p>"Juntos movemos el cuerpo, liberamos
+                    el alma y llenamos el espacio de energía.
+                    Cada paso es una celebración compartida".
+                </p></div>
+                <div class="slide-item"><img src="../img/abs.jpg"
+                    alt="Frase 7">
+                    <p>"La resistencia que enfrentas en el gimnasio y en la vida solo se 
+                        construye con un carácter fuerte." <br>-ARNOLD SCHWARZENEGGER</p>
+                </div>  
+        </div>
+        <h3>
+        La salud no es solo la ausencia de enfermedad, sino un estado de bienestar físico, mental y social.
+        <br><br>
+        Aprende a escuchar tu cuerpo,cuidar tu mente y mantener 
+        hábitos sostenibles es la base para una vida plena.
+        <br><br>
+            Este espacio está diseñado para ayudarte 
+            a descubrir herramientas practicas, consejos 
+            y motivacion para vivir con energia y equilibrio.
+            Recuerda: pequeños cambios diarios generan grandes resultados a largo plazo. ¡Empieza hoy tu transformacion!
+            <br><br>
+            Alimentación consciente, descanso adecuado,
+            movimiento diario y amor propio son pilares 
+            fundamentales para una vida saludable.
+            <br><br>
+            Si logras integrar cada uno de estos elementos en tu rutina diaria, estarás en camino a alcanzar tu máximo potencial.
+        </h3>
+</section>
+<script>
+        let currentIndex = 0;
+        const items=
+        document.querySelectorAll('.slide-item');
+
+        function showSlide(index) {
+            const total = items.length;
+            if (index >= total) currentIndex = 0;
+         contenedor.style.transform = `translateX(-${indice * 
+        400}px)`;
+    }
+
+</script>
+</body>
+</html>

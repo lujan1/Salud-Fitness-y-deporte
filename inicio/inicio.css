@@ -1,0 +1,118 @@
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat',sans-serif;
+    background-image: url(../img/peso.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #111;
+}
+.contenido {
+    min-height: 100vh;
+    padding: 40px;
+}
+.titulo {
+    font-size: 3rem;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 20px;
+}
+.menu {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.menu a {
+    background-color: #d4cfc7;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+.menu a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+.seccion-carrusel {
+    padding: 50px 20px;
+    background: rgba(40,40,40,0.9);
+    text-align: center;
+}
+.titulo-carrusel {
+    font-size: 2rem;
+    color: #e0d7c6;
+    margin-bottom: 30px;
+    font-family: 'Georgia',serif;
+}
+.contenedor-carrusel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+}
+.contenedor-carrusel::-webkit-scrollbar
+{
+    display: none;
+}
+.slide-caja {
+    display: flex;
+    gap: 20px;
+}
+.slide-item {
+    height: 300px;
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.slide-item:hover {
+    transform: scale(1.03);
+}
+.slide-item img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.slide-item p {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+.texto.slide {
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p {
+    color: white;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-style: italic;
+}

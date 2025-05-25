@@ -1,0 +1,91 @@
+body {
+    margin: 5px;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'arial',sans-serif;
+}
+.sobre-mi {
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+.sobre-mi .contenido {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.sobre-mi h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+body {
+    background-image: url('img/sport.jpg');
+    background-size: cover;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content:right;
+    padding: 20px;
+    background-color:transparent;
+    margin: 0;
+}
+nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: #ffd700;
+    color: #111;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.sobre-mi{
+    padding-top: 10px;
+    text-align: center;
+}
+.sobre-mi h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.botones-flotantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    z-index: 1000;
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.15);}
+    100% {transform: scale(1);}
+}
+.icono-flotante {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) ;
+    animation: pulse 1.5 infinite 
+    ease-in-out;
+    color: white;
+}
+.icono-flotante.instagram {
+    background-color: #e1306c;
+}
+.icono-flotante.whatsapp {
+    background-color: #25d366;
+}
